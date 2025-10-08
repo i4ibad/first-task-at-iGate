@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rdx sports</title>
+
+    <link rel="stylesheet" href="rdx.css">
+</head>
+<body>
+    
+        <div class="topbar">
+        <div class="auth">
+            <img src="img/authenticator.webp" alt="">
+            <a href="" class="">Authenticator</a>|
+            <a href="">Wholesale</a>|
+            <a href="">Blog</a>
+        </div>
+        <div class="welcome">
+            <div>"Welcome to RDX Sports"</div>
+        </div>
+       
+        <ul class="lang-country">
+            <div class="country-selector">
+                <div class="selected-option">
+                    <img src="img/united-states.png" alt="US Flag"> US
+                </div>
+                    <ul class="options">
+                        <li><img src="img/united-states.png" alt=""> United States</li>
+                        <li><img src="img/uk.png" alt=""> UK</li>
+                        <li><img src="img/it.webp" alt=""> Italy</li>
+                        <li><img src="img/global.webp" alt=""> Global</li>
+                        <li><img src="img/gr.webp" alt=""> Germany</li>
+                        <li><img src="img/pt.webp" alt=""> Portugal</li>
+                        <li><img src="img/fr.webp" alt=""> France</li>
+                        <li><img src="img/eu.webp" alt=""> Europe</li>
+                        <li><img src="img/ca.webp" alt=""> Canada</li>
+                        <li><img src="img/sp.webp" alt=""> Spain</li>
+                        <li><img src="img/UAE-FLAG.webp" alt=""> UAE</li>
+                        <li><img src="img/SWEDEN-FLAG.png" alt=""> Sweden</li>
+                        <li><img src="img/switzerland-flag.webp" alt=""> Switzerland</li>
+                        <li><img src="img/ROMANIA-FLAG.webp" alt=""> Romania</li>
+                        <li><img src="img/Belgium.webp" alt=""> Belgium</li>
+                    </ul>
+                </div>
+
+            <span class="lang">        
+                <select name="" id="" class="lang-select">
+                    <option value="en">English</option>    
+                </select>
+            </span>
+        </ul>
+    </div>
+    
+    <!-- JAVASCRIPT FOR COUNTRY DROPDOWN -->
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const selector = document.querySelector(".country-selector");
+
+    selector.addEventListener("click", function(e) {
+      e.stopPropagation(); // dusre clicks ignore kare
+      selector.classList.toggle("active");
+    });
+
+    // Agar bahar click kare to band ho jaye
+    document.addEventListener("click", function() {
+      selector.classList.remove("active");
+    });
+  });
+
+</script>
+
+    <!-- NAVBAR -->
+
+
+    <header id="navbar">
+
+
+        <a href="#" class="logo"><img src="img/RDX_Logo_black.webp" alt="Logo"></a>
+
+        <img class="burger" src="img/menu (1).png" alt="">
+
+
+        <ul class="menu">
+
+            <li class="menuitem">
+                <a href="https://rdxsports.com/collections/boxing">BOXING <img src="img/down-arrow.png" alt=""></a>
+                <div class="dropdown"> 
+                <ul class="sub-menu">
+                    <li class="role">APPROVED RANGES</li>
+                    <li class="role">BOXING GLOVES</li>
+                    <li class="role">PUNCH BAGS</li>                
+                    <li class="role">COACHING EQUIPMENT</li>
+                    <li class="role">PROTECTIVE GEAR</li>          
+                    <li class="role">TRAINING EQUIPMENT</li>            
+                    <li class="role">APPAREL</li>
+                </ul>
+            </div>
+        </li>
+    
+        <li class="menuitem">
+            <a href="https://rdxsports.com/collections/mma">MMA<img src="img/down-arrow.png" alt=""></a>
+            <div class="dropdown">
+                <ul class="sub-menu">
+                    <li class="roel">APPROVED RANGES</li>
+                    <li class="roel">MMA GLOVES</li>
+                    <li class="roel">MMA PUNCH BAGS</li>
+                    <li class="roel">COACHING EQUIPMENT</li>
+                    <li class="roel">STABILITY AND MOBILITY</li>
+                    <li class="roel">PROTECTIVE GEAR</li>
+                    <li class="roel">TRAINING EQUIPMENT</li>
+                </ul>
+            </div>
+        </li>
+    
+        <li class="menuitem">
+            <a href="https://rdxsports.com/collections/fitness">FITNESS<img src="img/down-arrow.png" alt=""></a>
+            <div class="dropdown">
+                <ul class="sub-menu">
+                    <li class="role">GYM GLOVES</li>
+                    <li class="role">WEIGHTLIFTING BELTS</li>
+                    <li class="role">WEIGHTLIFTING GEAR</li>
+                    <li class="role">STRENGTH TRAINING</li>
+                    <li class="role">STABILITY & MOBILITY</li>
+                    <li class="role">BRACES & SUPPORT</li>
+                    <li class="role">GYM ESSENTIALS</li>
+                </ul>
+            </div>
+        </li>
+    
+        <li class="menuitem">
+            <a href="https://rdxsports.com/pages/rdx-yoga">YOGA<img src="img/down-arrow.png" alt=""></a>
+            <div class="dropdown">
+                <ul class="sub-menu">
+                    <li class="role">YOGA</li>
+                    <li class="role">YOGA MATS</li>
+                    <li class="role">YOGA BLOCKS</li>
+                    <li class="role">YOGA STRAP</li>
+                    <li class="role">YOGA BALL</li>
+                    <li class="role">STABILITY & MOBILITY</li>
+                </ul>
+            </div>    
+        </li>
+
+        <li class="menuitem">
+            <a href="https://rdxsports.com/collections/clothing">APPAREL<img src="img/down-arrow.png" alt=""></a>
+            <div class="dropdown">
+                <ul class="sub-menu">
+                    <li class="role">ACTIVE WEAR</li>
+                    <li class="role">COMPRESSION WEAR & SHORTS</li>
+                    <li class="role">SAUNA RANGE</li>
+                </ul>
+            </div>
+        </li>
+    
+        <li class="menuitem">
+            <a href="https://rdxsports.com/collections/collection">COLLECTION<img src="img/down-arrow.png" alt=""></a>
+            <div class="dropdown">
+                <ul class="sub-menu">
+                    <li class="role">SERIES</li>
+                    <li class="role">RANGES</li>
+                    <li class="role">APPROVALS / CERTIFICATIONS</li>
+                </ul>
+            </div>
+        </li>
+    
+        <li class="menuitem">
+            <a href="https://rdxsports.com/collections/kids">KIDS<img src="img/down-arrow.png" alt=""></a>
+            <div class="dropdown">
+                <ul class="sub-menu">
+                    <li class="role">Kids Boxing Sets</li>
+                    <li class="role">Kids Boxing Gloves</li>
+                    <li class="role">kids MMA Gloves</li>
+                    <li class="role">Kids Head Guard</li>
+                    <li class="role">Kids Focus Pads</li>
+                    <li class="role">Kids Punch Bags</li>
+                </ul>
+            </div>
+        </li>
+        
+        <li class="menuitem">
+            <a href="https://rdxsports.com/collections/sale-deals">SALE</a>
+        </li>
+        
+        <li class="menuitem">
+            <a href="https://rdxsports.com/collections/new-arrival">NEW</a>
+        </li>
+    </ul>
+
+    <div class="icons">
+        <a href="#" class="search-icon"><img src="img/search.png" alt=""></a>
+        <a href="#" class="user-icon"><img src="img/user.png" alt=""></a>
+        <a href="#" class="cart-icon"><img src="img/shop-bag.png" alt=""></a>
+    </div>
+    
+</header>
+
+<!-- <script>
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.menu');
+
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script> -->
+
+  
+    <!-- AUTO SLIDER -->
+
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <img src="img/rdximg.webp" alt="">
+
+                <img src="img/EN-Mobile-version.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/rdximg1.webp" alt="">
+
+                <img src="img/US_-_SHORTS_CAMPAIGN_-_KV_-_Mobile.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/khalil.jpeg" alt="">
+
+                <img src="img/EN-Khalil-version.jpeg" alt="">
+            </div>
+        </figure>
+    </div>
+
+    <div class="fitness">
+
+    <div class="boxing">
+        <a href="https://rdxsports.com/collections/boxing">
+            <img src="img/boxing.jpeg" alt="Boxing">
+            <div class="boxing-text">BOXING</div>
+        </a>
+    </div>
+    
+
+    <div class="boxing">
+        <a href="https://rdxsports.com/collections/fitness">
+            <img src="img/MMA.webp" alt="Boxing">
+            <div class="boxing-text">MMA</div>
+        </a>
+    </div>
+    
+    <div class="boxing">
+        <a href="https://rdxsports.com/collections/fitness">
+            <img src="img/fitness.webp" alt="Boxing">
+            <div class="boxing-text">FITNESS</div>
+        </a>
+    </div>
+  </div>
+
+  <div class="img-block">
+    <img src="img/box img.webp" alt="">
+
+    <img src="img/videoframe_3904.png" alt="">
+  </div>
+
+    <div class="main-box">
+
+        <div class="inner-box">
+            <h4 class="h2">YOGA</h4>
+            <a href="https://rdxsports.com/pages/rdx-yoga">
+                <img src="img/yoga.webp" alt="">
+            </a>
+        </div>
+        
+        <div class="inner-box">
+            <h4 class="h2">APPAREL</h4>
+            <a href="https://rdxsports.com/collections/clothing">
+                <img src="img/apparel.webp" alt="">
+            </a>
+        </div>
+        <div class="inner-box">
+            <h4 class="h2">TRAINING</h4>
+            <a href="https://rdxsports.com/collections/boxing-training-equipments">
+                <img src="img/training.webp" alt="">
+            </a>
+        </div>
+        <div class="inner-box">
+            <h4 class="h2">WEIGHT LIFTING</h4>
+            <a href="https://rdxsports.com/collections/fitness-weightlifting-gear">
+                <img src="img/weight lifting.webp" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="podcast">
+        <a href="https://www.youtube.com/playlist?list=PLlZQl6vsKi7tG4O8FjWmCQa7celjsS6ig"><img src="img/podcast.webp" alt=""></a>
+
+        <a href="https://www.youtube.com/playlist?list=PLlZQl6vsKi7tG4O8FjWmCQa7celjsS6ig"><img src="img/podcast_mobile.webp" alt=""></a>
+    </div>
+
+    <div class="blogs">
+        <h3>LATEST BLOGS</h3>
+        <p>from RDX Sports</p>
+
+        <div class="blogs-row">
+
+            <div class="blog">
+                <img src="img/blog 1.jpg" alt="">
+                <h2>The Ultimate Resistance Band Leg Workout: Build Lower Body Strength at Home</h2>
+            <p>At RDX Sports, we believe that every workout is a step toward a stronger, healthier you. Whether you're training for strength, endurance, or just to stay active, we’ve got everything you need to power through your fitness journey.
+            </p>
+        </div>
+
+        <div class="blog">
+            <img src="img/blog 2.jpg" alt="">
+
+            <h2>Jorge Masvidal on potential Leon Edwards clash: ‘I don’t think he wants it’</h2>
+
+            <p>At RDX Sports, we believe that every workout is a step toward a stronger, healthier you. Whether you're training for strength, endurance, or just to stay active, we’ve got everything you need to power through your fitness journey.
+            </p>
+        </div>
+        
+        
+        <div class="blog">
+            <img src="img/blog 3.jpg" alt="">
+
+            <h2>Shamil Gasanov erases only career stain with methodical victory: ‘I got my revenge’</h2>
+            
+            <p>At RDX Sports, we believe that every workout is a step toward a stronger, healthier you. Whether you're training for strength, endurance, or just to stay active, we’ve got everything you need to power through your fitness journey.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <section class="why-love-rdx">
+        <div class="left-heading">
+            <h2>WHY PEOPLE LOVE RDX SPORTS</h2>
+        </div>
+
+
+        <div class="right-features">
+
+            <div class="feature">
+                <img src="img/easy return.webp" alt="">
+                <h3>Free &amp; Easy Returns</h3>
+                <p>Not satisfied? Return your purchase for free within 30 days.</p>
+            </div>
+
+            <div class="feature">
+                <img src="img/guarantee.webp" alt="">
+                <h3>30-Day Guarantee</h3>
+                <p>Issues with your product? We've got you covered.</p>
+            </div>
+
+            <div class="feature">
+                <img src="img/customer service.webp" alt="">
+                <h3>24/7 Support</h3>
+                <p>We're here to help you anytime, anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-signup">
+        <h1>Join Team RDX</h1>
+        <p>250,000+ people training. Get news & 10% discount.</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Enter email" required>
+            <button type="submit">Subscribe</button>    
+        </form>
+
+        <div class="social-icons">
+            <a href="#"><img src="img/facebook.svg" alt=""></a>
+            <a href="#"><img src="img/twitter.svg" alt=""></a>
+            <a href="#"><img src="img/instagram.svg" alt=""></a>
+            <a href="#"><img src="img/youtube.svg" alt=""></a>
+            <a href="#"><img src="img/pinterest.svg" alt=""></a>
+            <a href="#"><img src="img/tiktok.svg" alt=""></a>
+        </div>
+    </div>  
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="offices">
+            <p>
+                <strong>United States Of America</strong>
+                <br>
+                13833 N Promenade Blvd #100
+                <br>
+                Stafford, TX 77477, USA
+                <br>
+                +1 844 739 8326
+            </p>
+            <p>
+                <strong>United Kingdom</strong>
+                <br>
+                Unit B3 And Attic, Fernhill Mill,
+                <br>
+                Hornby Street, Bury, England, BL9 5BL
+                <br>
+                +44 808 189 4444
+            </p>
+            <p>
+                <strong>Germany</strong>
+                <br>
+                Südring 1-5
+                <br>
+                63165 Mühlheim am Main, German
+                <br>
+                +49 6175 6514902
+            </p>
+            <p>
+                <strong>Canada</strong>
+                <br>
+                410 Wentworth St N
+                <br>
+                Hamilton, ON L8L 5W3, Canada
+                <br>
+                +1 289 667 3131
+            </p>
+            <p>
+                <strong>UAE</strong>
+                <br>
+                Mussaffah Industrial M-38,
+                <br>
+                Abu Dhabi, UAE
+                <br>
+                +971 4 517 8425
+            </p>
+
+        </div>
+
+        <div class="footer-top">
+            <div class="footer-section">
+
+                <input type="checkbox" id="cat1">
+                <label for="cat1">CATEGOTIES</label>
+                <ul>
+                    <li><a href="#">Boxing</a></li>
+                    <li><a href="#">MMA</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Home Gym</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Gift Card</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+
+                <input type="checkbox" id="cat2">
+
+                <label for="cat2">MEDIA</label>
+
+                <ul>
+                    <li><a href="#">Corporate News</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">RDX TV</a></li>
+                    <li><a href="#">Brand Ambassadors</a></li>
+                    <li><a href="#">Wholesale Blog</a></li>
+                    <li><a href="#">Podcast</a></li>
+                </ul>    
+            </div>
+
+            <div class="footer-section">
+
+                <input type="checkbox" id="cat3">
+
+                <label for="cat3">COMPANY</label>
+
+                <ul>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Wholesale</a></li>
+                    <li><a href="#">Trade Catalog</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Trade Inquiry</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+
+                <input type="checkbox" id="cat4">
+
+                <label for="cat4">CUSTOMER HELP</label>
+                
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Size Chart</a></li>
+                    <li><a href="#">RDX Authenticator</a></li>
+                    <li><a href="#">Shipment & Delivery</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- POLICY -->
+
+    <div class="footer-bottom">
+
+        <div class="copyright">
+            <p>
+                © 2025 RDX Sports ‑ Global, All rights reserved.
+            </p>
+        </div>
+            
+        <div class="ftr-btm">
+
+            <div class="policies">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Return Policy</a> |
+            </div>
+            
+            <div class="region-select">
+                <a href="#">English</a>
+            </div>
+        </div>
+            
+    </div>
+
+    <!--  JAVASCRIPT FOR CAROUSEL -->
+
+    <script>
+
+        document.querySelectorAll(".carousel").forEach((carousel) => {
+        const items = carousel.querySelectorAll(".carousel-item");
+        const buttonsHtml = Array.from(items, () => {
+        return `<span class="carousel-button"></span>`;
+        });
+
+        carousel.insertAdjacentHTML(
+        "beforeend",
+        `
+		<div class="carousel-nav">
+			${buttonsHtml.join("")}
+		</div>
+	    `
+        );
+
+        const buttons = carousel.querySelectorAll(".carousel-button");
+
+        buttons.forEach((button, i) => {
+        button.addEventListener("click", () => {
+        // un-select all the items
+        items.forEach((item) =>
+        item.classList.remove("carousel-item-selected")
+        );
+        buttons.forEach((button) =>
+        button.classList.remove("carousel-button-selected")
+        );
+
+        items[i].classList.add("carousel-item-selected");
+        button.classList.add("carousel-button-selected");
+        });
+    });
+
+        // Select the first item on page load
+        items[0].classList.add("carousel-item-selected");
+        buttons[0].classList.add("carousel-button-selected");
+});
+    </script>
+
+</body>
+</html>
